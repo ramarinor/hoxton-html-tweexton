@@ -26,7 +26,10 @@ header.main-header {
 main.main-container {
 	padding: 2rem;
 	display: grid;
-	grid-template-columns: minmax(40ch, 50ch) minmax(30ch, 50ch) 45ch;
+	grid-template-columns: minmax(30ch, 50ch) minmax(25ch, 50ch) minmax(
+			25ch,
+			50ch
+		);
 	justify-content: space-around;
 	grid-gap: 2rem;
 }
