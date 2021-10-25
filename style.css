@@ -108,3 +108,26 @@ p.author-user-time {
 article ol {
 	margin-left: 1rem;
 }
+/* making only the tweets scrollable */
+body {
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	overflow: hidden;
+}
+.main-container {
+	overflow: scroll;
+}
+.main-container .tweets,
+.main-container .left-section,
+.main-container .right-section {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	overflow: scroll;
+}
+
+.main-container .tweets .section-main,
+.main-container .left-section .section-main,
+.main-container .right-section .section-main {
+	overflow: scroll;
+}
