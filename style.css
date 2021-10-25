@@ -43,9 +43,16 @@ article.side-article {
 	font-family: sans-serif;
 }
 
-article.main-article {
+article.main-article:nth-of-type(odd) {
 	background-color: #7db4f9;
 	border: 3px solid #5a92da;
+	color: white;
+	font-family: sans-serif;
+}
+
+article.main-article:nth-of-type(even) {
+	background-color: #5a92da;
+	border: 3px solid #7db4f9;
 	color: white;
 	font-family: sans-serif;
 }
@@ -93,4 +100,8 @@ p.author-user-time {
 .main-article p.author-user-time .user-time {
 	color: #3f4c58;
 	font-size: 0.7rem;
+}
+
+article ol {
+	margin-left: 1rem;
 }
